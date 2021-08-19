@@ -4,6 +4,9 @@ services:
     build: .
     ports:
       - 80:80
+    external_links: 
+      - app1
+      - app2
     networks:
       - app-network
 
