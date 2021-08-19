@@ -1,3 +1,3 @@
 FROM nginx:alpine
 EXPOSE 80
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY  ./proxy/proxy.conf :/etc/nginx/conf.d/default.conf
