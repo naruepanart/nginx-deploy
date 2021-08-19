@@ -7,9 +7,6 @@ services:
       - ./proxy/proxy.conf:/etc/nginx/conf.d/default.conf
     ports:
       - 80:80
-    external_links: 
-      - app1
-      - app2
     networks:
       - app-network
 
